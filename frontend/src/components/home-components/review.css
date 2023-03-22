@@ -1,0 +1,57 @@
+.review {
+  display: flex;
+  flex-direction: column;
+  width: max-content;
+  /* flex-shrink: 0;
+  flex-basis: 36rem; */
+}
+
+.quoteIcon {
+  margin-left: auto;
+}
+.user {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+  color: #26404e;
+}
+
+.user p:nth-child(2) {
+  opacity: 0.6;
+}
+
+.stars {
+  display: flex;
+  justify-content: flex-end;
+  color: #f2b01e;
+}
+
+.stars > * {
+  width: 2rem;
+  height: 2rem;
+}
+
+.stars .gray-star {
+  color: #afafaf94;
+}
+
+
+@media (max-width: 60em) {
+  .reviews-flex {
+    gap: 4rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .review {
+    max-width: 45.5rem;
+    min-width: 32rem;
+    width: 80%;
+  }
+}
+
+@media (max-width: 22.5em) {
+  .review {
+    min-width: 26rem;
+  }
+}

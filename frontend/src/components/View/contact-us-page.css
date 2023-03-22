@@ -1,0 +1,149 @@
+.contact-us--address {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+.get-in-touch-info a {
+  color: #eaeeef;
+}
+
+.contact-us--page {
+  display: grid;
+  place-items: center;
+  min-height: calc(100vh - 7rem);
+  height: max-content;
+  background: url("../../imgs/citizentube--img1.jpg");
+  object-fit: cover;
+  box-shadow: inset 0 0 0 100rem var(--secondary-color-opacity-c5);
+  color: #eaeeef;
+}
+
+.contact-heading {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.contact-heading p {
+  font-weight: 700;
+}
+
+.contact-us-information {
+  display: grid;
+  gap: 3rem;
+  align-items: center;
+  grid-template-columns: repeat(2, 1fr);
+  height: 100%;
+  /* padding: 0 15%; */
+  /* margin: 0; */
+}
+
+.get-in-touch-info a:link {
+  color: #eaeeef;
+}
+
+.contact-heading div {
+  height: 1px;
+  width: 100%;
+  max-width: 35rem;
+  background: #eaeeef56;
+}
+
+.contact-us {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.get-in-touch--description {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.get-in-touch-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.get-in-touch-info svg {
+  width: 2rem;
+  height: 2rem;
+}
+
+.get-in-touch-info,
+.location-img-main,
+.follow-us--links {
+  margin-left: 0.5rem;
+}
+
+.location-img-main {
+  position: relative;
+  height: 15rem;
+  /* width: max-content; */
+  overflow: hidden;
+  width: 45rem;
+  border-radius: 0.3rem;
+}
+
+/* .get-in-touch--description {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+} */
+
+.location-img {
+  top: -10%;
+  position: absolute;
+  width: 45rem;
+}
+
+.location-img-main button {
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+  color: #eaeeef;
+  background-color: var(--secondary-color);
+  padding: 1rem 0.5rem;
+  font-size: 1rem;
+  border-radius: 0.2rem;
+  cursor: pointer;
+}
+
+.follow-us--links {
+  display: flex;
+  gap: 2rem;
+}
+
+.follow-link {
+  display: grid;
+  place-items: center;
+  padding: 1.2rem;
+  background-color: #eaeeef;
+  border-radius: 0.5rem;
+}
+
+.follow-link > * {
+  color: var(--secondary-color);
+  width: 1.7rem;
+  height: 1.7rem;
+}
+
+@media (max-width: 61.875em) {
+  .location-img-main {
+    min-width: 25rem;
+    width: 100%;
+    margin: 0;
+  }
+  .contact-us-information {
+    grid-template-columns: 1fr;
+    gap: 5rem;
+  }
+}
+
+@media (max-width: 27.813rem) {
+  .location-img-main {
+    width: 95%;
+  }
+}

@@ -1,0 +1,38 @@
+.service {
+  position: relative;
+  color: #eaeeef;
+  background-color: var(--secondary-color);
+  padding: 4rem 2rem;
+  max-width:60rem;
+  width: 100%;
+  border-radius: 0.5rem;
+}
+
+.service-icon {
+  top: -6.5rem;
+  transform: translate(0, 100%);
+  position: absolute;
+}
+
+.service-icon > * {
+  height: 4.5rem;
+  width: 4.5rem;
+}
+
+.service-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.service-text h2 {
+  font-size: 2rem;
+}
+
+.service-text > p {
+  line-height: 1.4;
+  margin-left: 1rem;
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: #c1cbd0;
+}

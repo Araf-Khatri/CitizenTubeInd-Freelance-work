@@ -1,0 +1,80 @@
+.navbar {
+  top: 0;
+  position: sticky;
+  background-color: #ffffff;
+  box-shadow: 0 0.1rem 3rem 0.1rem #00000025;
+  z-index: 1000;
+}
+
+.navbar-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0;
+  margin: 0 15%;
+}
+
+.navbar-flex img {
+  width: 17rem;
+}
+
+.navigate-column {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.navigate-column * {
+  border-radius: 2px;
+}
+
+.menu--btn * {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+.menu--btn {
+  display: none;
+}
+
+.org-logo {
+  position: relative;
+}
+
+.org-logo::before {
+  content: "ISO 9001";
+  bottom: 0;
+  left: 50%;
+  position: absolute;
+  font-size: 0.8rem;
+  color: #000000;
+  transform: translateX(50%);
+}
+
+
+@media (max-width: 43.8em) {
+  .navigate-column {
+    /* display: none; */
+    top: 0;
+    left: 0;
+    position: absolute;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    padding: 3rem 1rem;
+    background-color: #ffffff;
+    z-index: 99;
+  }
+
+  .navigate-column * {
+    text-align: center;
+  }
+
+  .menu--btn {
+    display: block;
+  }
+  
+  .hide-nav {
+    display: none;
+    transform: translateX(100%);
+  }
+}

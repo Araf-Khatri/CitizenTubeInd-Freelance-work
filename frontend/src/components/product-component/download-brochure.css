@@ -1,0 +1,19 @@
+.download-brochure {
+  position: relative;
+  color: #eaeeef;
+  background-color: #2a4857;
+  width: fit-content;
+  cursor: pointer;
+  /* margin-bottom: 2rem; */
+}
+
+.download-brochure span {
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  width: 110%;
+  color: #112731;
+  font-size: 1rem;
+  font-weight: 300;
+  transform: translate(4.5%, 120%);
+}

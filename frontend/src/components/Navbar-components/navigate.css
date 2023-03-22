@@ -1,0 +1,18 @@
+.navigate-column a {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 600;
+  color: #000000;
+  padding: 2rem;
+  font-size: 1.7rem;
+}
+
+.navigate-column a:hover {
+  background-color: var( --primary-color-opacity-50);
+  
+}
+
+.navigate-column a.active {
+  color: #fcf2f3;
+  background-color: var( --primary-color);
+}

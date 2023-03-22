@@ -1,0 +1,81 @@
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.tabs label {
+  order: 1;
+  display: block;
+  padding: 1rem 2rem;
+  margin-right: 0.2rem;
+  cursor: pointer;
+  background: var(--secondary-color);
+  color: #eaeeef;
+  font-weight: bold;
+  transition: background ease 0.2s;
+}
+
+.tabs .tab {
+  order: 99;
+  flex-grow: 1;
+  width: 100%;
+  display: none;
+  padding: 1rem;
+  background: #fff;
+}
+
+.tabs input[type="radio"] {
+  display: none;
+}
+
+.tabs input[type="radio"]:checked + label {
+  background: #fff;
+  color: var(--secondary-color);
+}
+
+.tabs input[type="radio"]:checked + label + .tab {
+  display: block;
+}
+
+.tab h2 {
+  border-bottom: 1px solid var(--secondary-color-opacity-25);
+}
+
+.type-details {
+  text-align: center;
+}
+
+.main-tab {
+  margin-left: 5%;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.tab-section {
+  margin: 1rem 0 0 4rem;
+  display: grid;
+  grid-template-columns: 25% 75%;
+  row-gap: 2rem;
+}
+/* .tab-section {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+} */
+
+@media (max-width: 45em) {
+  .tabs .tab,
+  .tabs label {
+    order: initial;
+  }
+  .tabs label {
+    width: 100%;
+    margin-right: 0;
+    margin-top: 0.2rem;
+  }
+  .tabs input[type="radio"]:checked + label {
+    display: none;
+  }
+}

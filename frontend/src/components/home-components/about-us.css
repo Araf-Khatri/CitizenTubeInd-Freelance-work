@@ -1,0 +1,17 @@
+.about-us--section {
+  background: var(--secondary-color);
+  color: #eaeeef;
+}
+
+.about-us {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.about-us p {
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 1.4;
+}
