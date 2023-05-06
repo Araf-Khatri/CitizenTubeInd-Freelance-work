@@ -8,14 +8,14 @@ router.post("/", async (req, res, next) => {
     // console.log(req.body);
     const { name, email, message, phoneNumber } = req.body;
 
-    const ourEmail = "contact@citizentubeind.com";
+    const ourEmail = "abc@gmail.com";
     const transporter = nodemailer.createTransport({
       host: "smtp.hostinger.com",
       port: 465,
       secure: true,
       auth: {
         user: ourEmail,
-        pass: "Hamza@12",
+        pass: "N/A",
       },
     });
 
